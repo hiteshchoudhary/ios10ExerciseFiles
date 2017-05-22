@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAF-4W-gsx">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Paris" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-R2-swe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="C8i-DU-U02"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="u6r-N4-oWd"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB8-f8-amW">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Get Weather">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeatherTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DH0-tF-bDf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature is: 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-Ar-Yju">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather is: Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAf-5I-PvE">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a8d-R2-swe" firstAttribute="top" secondItem="nAF-4W-gsx" secondAttribute="bottom" constant="44" id="3Wo-VA-5Xp"/>
+                            <constraint firstItem="dXh-Ar-Yju" firstAttribute="top" secondItem="rB8-f8-amW" secondAttribute="bottom" constant="34" id="3bK-2d-zUP"/>
+                            <constraint firstItem="rB8-f8-amW" firstAttribute="centerX" secondItem="a8d-R2-swe" secondAttribute="centerX" id="6bD-8V-DAc"/>
+                            <constraint firstItem="nAF-4W-gsx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mh9-J3-pnE"/>
+                            <constraint firstItem="a8d-R2-swe" firstAttribute="centerX" secondItem="nAF-4W-gsx" secondAttribute="centerX" id="Nsl-5W-ln5"/>
+                            <constraint firstItem="rB8-f8-amW" firstAttribute="top" secondItem="a8d-R2-swe" secondAttribute="bottom" constant="29" id="Ohj-TN-hwI"/>
+                            <constraint firstItem="jAf-5I-PvE" firstAttribute="centerX" secondItem="dXh-Ar-Yju" secondAttribute="centerX" id="YnU-Eo-3oC"/>
+                            <constraint firstItem="jAf-5I-PvE" firstAttribute="top" secondItem="dXh-Ar-Yju" secondAttribute="bottom" constant="29" id="iw3-99-1lA"/>
+                            <constraint firstItem="nAF-4W-gsx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCF-Xb-vMc"/>
+                            <constraint firstItem="dXh-Ar-Yju" firstAttribute="centerX" secondItem="rB8-f8-amW" secondAttribute="centerX" id="qSU-sq-mgA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="a8d-R2-swe" id="uyV-rw-E5Z"/>
+                        <outlet property="getweather" destination="rB8-f8-amW" id="ScQ-Sz-fcI"/>
+                        <outlet property="temp" destination="dXh-Ar-Yju" id="2CZ-Aq-6il"/>
+                        <outlet property="weatherType" destination="jAf-5I-PvE" id="xw8-LB-Ld9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

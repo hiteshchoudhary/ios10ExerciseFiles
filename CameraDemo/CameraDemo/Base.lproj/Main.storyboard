@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K18-1g-Xmo">
+                                <items>
+                                    <navigationItem title="Camera App" id="z0d-Sv-ZPl">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="BGR-Dd-dz8">
+                                            <connections>
+                                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="Iaq-qS-lu0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WgO-DP-jbI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="5WY-9S-JDM"/>
+                                    <constraint firstAttribute="width" constant="283" id="YM7-h8-Z4T"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="K18-1g-Xmo" secondAttribute="trailing" id="3hI-k5-PDc"/>
+                            <constraint firstItem="WgO-DP-jbI" firstAttribute="top" secondItem="K18-1g-Xmo" secondAttribute="bottom" constant="39" id="Caf-9g-epC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WgO-DP-jbI" secondAttribute="bottom" constant="292" id="NuD-OU-9fY"/>
+                            <constraint firstItem="WgO-DP-jbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gUU-DY-5YM"/>
+                            <constraint firstItem="K18-1g-Xmo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gWz-66-Ekp"/>
+                            <constraint firstItem="K18-1g-Xmo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mL5-wT-EaL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="WgO-DP-jbI" id="tDX-3U-57e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

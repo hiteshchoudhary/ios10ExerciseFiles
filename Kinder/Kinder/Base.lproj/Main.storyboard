@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="child-children-girl-happy" translatesAutoresizingMaskIntoConstraints="NO" id="jNU-Dy-AZ2">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="krs-Bg-JPy"/>
+                                    <constraint firstAttribute="height" constant="228" id="niw-lM-4wP"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpf-Xn-21M">
+                                <items>
+                                    <navigationItem title="Tinder for Kids" id="88f-Yr-d3Z"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5c-e4-kln">
+                                <frame key="frameInset" minX="150" minY="313" width="82" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.99379780648294191" blue="0.18631540550372827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43203380453119089" blue="0.36637060735159288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jNU-Dy-AZ2" firstAttribute="top" secondItem="rpf-Xn-21M" secondAttribute="bottom" constant="25" id="TuO-ID-RYe"/>
+                            <constraint firstItem="jNU-Dy-AZ2" firstAttribute="centerX" secondItem="rpf-Xn-21M" secondAttribute="centerX" id="dY8-aM-2qs"/>
+                            <constraint firstItem="O5c-e4-kln" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxO-5Q-XeS"/>
+                            <constraint firstItem="rpf-Xn-21M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uTx-qw-sXx"/>
+                            <constraint firstItem="rpf-Xn-21M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ulD-ae-COM"/>
+                            <constraint firstAttribute="trailing" secondItem="rpf-Xn-21M" secondAttribute="trailing" id="wVq-sd-s7A"/>
+                            <constraint firstItem="O5c-e4-kln" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xaM-5A-F7D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swipelabel" destination="O5c-e4-kln" id="fED-vX-buX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="child-children-girl-happy" width="640" height="430"/>
+    </resources>
+</document>
